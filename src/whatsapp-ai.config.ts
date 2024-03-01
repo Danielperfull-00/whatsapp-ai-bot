@@ -6,15 +6,15 @@ const config: Config = {
     models: {
         ChatGPT: {
             prefix: '!chatgpt', // Prefix for the ChatGPT model
-            enable: true // Whether the ChatGPT model is enabled or not
+            enable: false // Whether the ChatGPT model is enabled or not
         },
         DALLE: {
             prefix: '!dalle', // Prefix for the DALLE model
-            enable: true // Whether the DALLE model is enabled or not
+            enable: false // Whether the DALLE model is enabled or not
         },
         StableDiffusion: {
             prefix: '!stable', // Prefix for the StableDiffusion model
-            enable: true // Whether the StableDiffusion model is enabled or not
+            enable: false // Whether the StableDiffusion model is enabled or not
         },
         GeminiVision: {
             prefix: '!gemini-vision', // Prefix for the GeminiVision model
@@ -43,7 +43,7 @@ const config: Config = {
         /** if enable, reply to those messages start with prefix  */
         enable: true, // Whether prefix messages are enabled or not
         /** default model to use if message not starts with prefix and enable is false  */
-        defaultModel: 'ChatGPT' // Default model to use if no prefix is present in the message
+        defaultModel: 'Gemini' // Default model to use if no prefix is present in the message
     }
 };
 
